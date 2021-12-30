@@ -6,9 +6,6 @@ output.innerHTML = slider.value;
 
 gridMaker(slider.value);
 
-
-
-
 function gridMaker(n) {
     for(i=0;i<n;i++) {
         const Ri = document.createElement("R"+i)
@@ -31,6 +28,9 @@ document.querySelectorAll(".box").forEach(item => {
     item.addEventListener("mouseover",() => {
         item.className = "draw";
     });
+    item.addEventListener("touchstart",() => {
+        item.className = "draw";
+    });
 });
 
 slider.onchange = function () {
@@ -43,6 +43,9 @@ slider.onchange = function () {
     gridMaker(output.innerHTML);
     document.querySelectorAll(".box").forEach(item => {
         item.addEventListener("mouseover",() => {
+            item.className = "draw";
+        });
+        item.addEventListener("touchstart",() => {
             item.className = "draw";
         });
     });
