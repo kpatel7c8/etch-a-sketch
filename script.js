@@ -1,6 +1,4 @@
 const container = document.getElementById('container');
-
-
     
     /*const R1 = document.createElement("R1");
     R1.style.display = "flex";
@@ -81,13 +79,8 @@ let gridSize = 4;
 gridMaker(gridSize);
 
 
-/*R0C0.addEventListener("mouseover",() => {
-    R0C0.className = "draw";
+document.querySelectorAll(".box").forEach(item => {
+    item.addEventListener("mouseover",() => {
+        item.className = "draw";
+    });
 });
-
-const boxID = document.getElementsByClassName("box");
-
-for (i=0; i<boxID.length; i++) {
-    console.log(boxID[i]);
-
-}*/

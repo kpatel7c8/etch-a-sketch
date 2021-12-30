@@ -31,10 +31,8 @@ body {
     background-color: rgb(138, 44, 226);
 }
 
-.box:hover {
-    background-color: rgb(150, 50, 300);
-}
-
 .draw {
-    background-color: black;
+    display: flex;
+    width: 25vh;
+    background-color: palevioletred;
 }
