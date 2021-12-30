@@ -1,9 +1,7 @@
 const container = document.getElementById('container');
-
 const slider = document.getElementById("myRange");
 const output = document.getElementById("demo");
 output.innerHTML = slider.value;
-
 gridMaker(slider.value);
 
 function gridMaker(n) {
@@ -50,5 +48,3 @@ slider.onchange = function () {
         });
     });
 }
-
-let randomColor = 'red';
