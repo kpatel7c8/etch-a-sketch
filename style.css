@@ -16,7 +16,7 @@ body {
     background-color: rebeccapurple;
     border-radius: 20px;
     display: flex;
-    max-width: 80vh;
+    max-width: 100vh;
     height: 100vh;
     flex-grow: 1;
     flex-direction: column;
@@ -24,39 +24,39 @@ body {
 
 #top {
     display: flex;
-    align-items: flex-start;
-    height: 60px;
+    align-items: center;
+    height: 120px;
     color: green;
-    font-size: 40px;
+    font-size: 80px;
     font-family:'Courier New', Courier, monospace ;
     font-weight: 900;
-    gap: 10px;
+    gap: 200px;
 }
 
 #emoticon {
     color: gold;
     font-family: cursive;
-    font-size: 30px;
+    font-size: 60px;
     align-self: flex-end;
 }
 
 #bottom {
     display: flex;
-    align-items: center;
-    height: 60px;
+    align-items:center;
+    height: 120px;
     color: silver;
     font-size: 35px;
     font-family: cursive, lucida ;
-    align-content: space-around;
-    gap: 50px;
+    align-content: space-between;
+    gap: 200px;
 }
 
 #container {
-    border-left: 70px solid rebeccapurple;
-    border-right: 70px solid rebeccapurple;
+    border-left: 120px solid rebeccapurple;
+    border-right: 120px solid rebeccapurple;
     display: flex;
-    width: 80vh;
-    max-height: 80vh;
+    width: 100vh;
+    max-height: 100vh;
     flex-direction: column;
     align-items: stretch;
     flex-grow: 1;
@@ -66,33 +66,37 @@ body {
     display: flex;
     align-items: stretch;
     flex-grow: 1;
-    cursor: crosshair;
+    cursor: pointer;
+
 
 }
 
 .box {
-    display: flex;
-    background-color: rgb(138, 44, 226);
-    flex-grow: 1;
-
+  display: flex;
+  background-color: rgb(138, 44, 226);
+  flex-grow: 1;
+  border: 1px inset white;
 }
 
 .draw {
-    display: flex;
-    background-color: palevioletred;
-    flex-grow: 1;
+  display: flex;
+  background-color: palevioletred;
+  flex-grow: 1;
+  border: 1px outset white;
+  transition:ease-in .7s;
 }
 
 .slidecontainer {
     width: 100%;
     display: flex;
+    align-items: center;
   }
   
   .slider {
     -webkit-appearance: none;
     width: 100%;
-    height: 15px;
-    border-radius: 5px;
+    height: 30px;
+    border-radius: 20px;
     background: black;
     outline: none;
     opacity: 0.5;
@@ -107,16 +111,16 @@ body {
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: #04AA6D;
     cursor: pointer;
   }
   
   .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: #04AA6D;
     cursor: pointer;
@@ -124,12 +128,12 @@ body {
 
   #demo {
       display: flex;
-      font-size: 20px;
+      font-size: 40px;
   }
 
   p {
     display: flex;
-    font-size: 20px;
-    width: 250px;
-    gap: 10px;
+    font-size: 40px;
+    width: 500px;
+    gap: 5px;
 }

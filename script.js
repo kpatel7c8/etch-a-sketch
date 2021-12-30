@@ -6,7 +6,8 @@ output.innerHTML = slider.value;
 
 gridMaker(slider.value);
 
-gridMaker(output.innerHTML);
+
+
 
 function gridMaker(n) {
     for(i=0;i<n;i++) {
@@ -46,3 +47,5 @@ slider.onchange = function () {
         });
     });
 }
+
+let randomColor = 'red';
