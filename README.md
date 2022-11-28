@@ -1,4 +1,4 @@
-## Link: https://kpatel7c8.github.io/etch-a-sketch/
+## Link: https://lil-white-shadow.github.io/etch-a-sketch/
 
 This is a simple etch-a-sketch simulator.
 
