@@ -76,14 +76,18 @@ body {
   background-color: rgb(138, 44, 226);
   flex-grow: 1;
   border: 1px inset white;
+  border-radius: 50%;
 }
 
 .draw {
   display: flex;
-  background-color: palevioletred;
+  /* background-color: palevioletred; */
   flex-grow: 1;
   border: 1px outset white;
   transition:ease-in .7s;
+  transition: ease-out 2s;
+  scale: 10;
+  border-radius: 50%;
 }
 
 .slidecontainer {
@@ -100,8 +104,8 @@ body {
     background: black;
     outline: none;
     opacity: 0.5;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+    -webkit-transition: .02s;
+    transition: opacity .02s;
   }
   
   .slider:hover {
